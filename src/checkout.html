@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+	@@include('html/_head.htm',{
+	"title":"Checkout"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul>
+                            <li><a href="#">Glówna</a></li>
+                            <li><a href="#">Koszyk</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <div class="checkout__container">
+                        <div class="checkout__title section-title">Checkout</div>
+                        <form action="#" class="checkout__body">
+                            <div class="checkout__form form-checkout">
+                                <div class="form-checkout__contact">
+                                    <div class="form-checkout__head">Dane kontaktowe</div>
+                                    <div class="form-checkout__inputs">
+                                        <div class="form-checkout__input form-input">
+                                            <div class="form-input__body">
+                                                <div class="form-input__label">Imię*</div>
+                                                <input type="text" name="userName" class="input">
+                                            </div>
+                                            <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                        </div>
+                                        <div class="form-checkout__input form-input">
+                                            <div class="form-input__body">
+                                                <div class="form-input__label">Nazwisko</div>
+                                                <input type="text" name="lastName" class="input">
+                                            </div>
+                                            <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                        </div>
+                                        <div class="form-checkout__input form-input">
+                                            <div class="form-input__body">
+                                                <div class="form-input__label">Telefon*</div>
+                                                <input type="tel" name="phone" class="input">
+                                            </div>
+                                            <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                        </div>
+                                        <div class="form-checkout__input form-input">
+                                            <div class="form-input__body">
+                                                <div class="form-input__label">Email*</div>
+                                                <input type="email" name="email" class="input">
+                                            </div>
+                                            <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-checkout__additional additional-form">
+                                    <div class="additional-form__head">Dodatkowe informacje</div>
+                                    <div class="additional-form__textarea">
+                                        <div class="additional-form__label">Message the host</div>
+                                        <textarea name="message" cols="30" rows="10" placeholder="Optional placeholder text"></textarea>
+                                    </div>
+                                    <div data-tabs class="additional-form__order">
+                                        <div class="additional-form__caption">Dane dostawy</div>
+                                        <div class="additional-form__nav">
+                                            <p>Jak chciałbyś otrzymać swoje zamówienie?*</p>
+                                            <div data-tabs-titles class="additional-form__row">
+                                                <button data-tabs-title type="button" class="additional-form__button button _tab-active">Odbiór osobisty</button>
+                                                <button data-tabs-title type="button" class="additional-form__button button">Dostawa kurierem</button>
+                                            </div>
+                                        </div>
+                                        <div data-tabs-body class="additional-form__content">
+                                            <div data-tabs-item class="additional-form__block">
+                                                <div class="additional-form__selects">
+                                                    <select name="form[]" class="additional-form__select">
+                                                        <option value="1" selected>Teren dostawy</option>
+                                                        <option value="2">dostawa na terenie Ursynowa albo Wilanowa - GRATIS!</option>
+                                                        <option value="3">dostawa na terenie Warszawy - 30 zł</option>
+                                                        <option value="4">dostawa poza Warszawę - do uzgodnienia telefonicznie</option>
+                                                    </select>
+                                                    <select name="form[]" class="additional-form__select">
+                                                        <option value="1" selected>Data dostawy</option>
+                                                        <option value="2">Data dostawy</option>
+                                                        <option value="3">Data dostawy</option>
+                                                        <option value="4">Data dostawy</option>
+                                                    </select>
+                                                    <select name="form[]" class="additional-form__select">
+                                                        <option value="1" selected>Czas dostawy</option>
+                                                        <option value="2">Czas dostawy</option>
+                                                        <option value="3">Czas dostawy</option>
+                                                        <option value="4">Czas dostawy</option>
+                                                    </select>
+                                                </div>
+                                                <div class="additional-form__factura">
+                                                    <div class="form-checkout__checkbox">
+                                                        <input checked id="factura" class="form-checkout__checkbox-input" type="checkbox" value="1" name="form[]">
+                                                        <label for="factura" class="form-checkout__label"><span class="form-checkout__text">Chcę fakturę</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="additional-form__inputs">
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">Nazwa firmy*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">NIP*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tabs-item class="additional-form__block">
+                                                <div class="additional-form__selects">
+                                                    <select name="form[]" class="additional-form__select">
+                                                        <option value="1" selected>Teren dostawy</option>
+                                                        <option value="2">Teren dostawy</option>
+                                                        <option value="3">Teren dostawy</option>
+                                                        <option value="4">Teren dostawy</option>
+                                                    </select>
+                                                    <select name="form[]" class="additional-form__select">
+                                                        <option value="1" selected>Data dostawy</option>
+                                                        <option value="2">Data dostawy</option>
+                                                        <option value="3">Data dostawy</option>
+                                                        <option value="4">Data dostawy</option>
+                                                    </select>
+                                                    <select name="form[]" class="additional-form__select">
+                                                        <option value="1" selected>Czas dostawy</option>
+                                                        <option value="2">Czas dostawy</option>
+                                                        <option value="3">Czas dostawy</option>
+                                                        <option value="4">Czas dostawy</option>
+                                                    </select>
+                                                </div>
+                                                <div class="additional-form__inputs">
+                                                    <div class="form-checkout__input form-input _error">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">Ulica*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">Numer budynky i lokal*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">Kod pocztowy*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">Miejscowość*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                </div>
+                                                <div class="additional-form__factura">
+                                                    <div class="form-checkout__checkbox">
+                                                        <input checked id="factura2" class="form-checkout__checkbox-input" type="checkbox" value="1" name="factura">
+                                                        <label for="factura2" class="form-checkout__label"><span class="form-checkout__text">Chcę fakturę</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="additional-form__inputs">
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">Nazwa firmy*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                    <div class="form-checkout__input form-input">
+                                                        <div class="form-input__body">
+                                                            <div class="form-input__label">NIP*</div>
+                                                            <input type="text" name="userName" class="input">
+                                                        </div>
+                                                        <div class="form-input__error"><span>!</span>Optional helper text</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__summary summary-checkout">
+                                <div class="summary-checkout__header">
+                                    <div class="summary-checkout__label">Twoje zamowienie</div>
+                                    <a href="#" class="summary-checkout__edit">zmien</a>
+                                </div>
+                                <div class="summary-checkout__slider slider-summary">
+                                    <div class="slider-summary__body swiper">
+                                        <div class="slider-summary__wrappe swiper-wrapper">
+                                            <a href="#" class="slider-summary__slide swiper-slide">
+                                                <img src="../img/product/01.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="slider-summary__slide swiper-slide">
+                                                <img src="../img/product/01.jpg" alt="">
+                                            </a>
+                                            <div class="slider-summary__slide swiper-slide">
+                                                <img src="../img/product/01.jpg" alt="">
+                                            </div>
+                                            <a href="#" class="slider-summary__slide swiper-slide">
+                                                <img src="../img/product/01.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="slider-summary__slide swiper-slide">
+                                                <img src="../img/product/01.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="slider-summary__slide swiper-slide">
+                                                <img src="../img/product/01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="slider-summary__arrow _icon-arrow"></button>
+                                </div>
+                                <div class="summary-checkout__summ summ-summary">
+                                    <div class="summary-checkout__label summ-summary__caption">Podsumowanie</div>
+                                    <div class="summ-summary__row">
+                                        <div class="summ-summary__label">Cena zamówienia</div>
+                                        <div class="summ-summary__item">2100 zł</div>
+                                    </div>
+                                    <div class="summ-summary__row">
+                                        <div class="summ-summary__label">Zniżka</div>
+                                        <div class="summ-summary__item">-90 zł</div>
+                                    </div>
+                                    <div class="summ-summary__row">
+                                        <div class="summ-summary__label">Kwota do zaplaty</div>
+                                        <div class="summ-summary__item">1890 zł</div>
+                                    </div>
+                                    <p class="summ-summary__lead">UWAGA *Zamówienia przyjmujemy z 3-dniowym wyprzedzeniem.</p>
+                                </div>
+                                <div class="summary-checkout__select">
+                                    <div class="summary-checkout__text portion-desc__label">Platność*</div>
+                                    <select name="payment">
+                                        <option value="1" selected>Online, przedpłata 50% wartości zamówienia</option>
+                                        <option value="2">Online, przedpłata 50% wartości zamówienia</option>
+                                        <option value="3">Online, przedpłata 50% wartości zamówienia</option>
+                                        <option value="4">Online, przedpłata 50% wartości zamówienia</option>
+                                    </select>
+                                </div>
+                                <div class="summary-checkout__lead">Czy wiesz, że płacąc pełną cenę za zamówienie, otrzymujesz 5% rabatu?</div>
+                                <div class="summary-checkout__chek">
+                                    <div class="form-checkout__checkbox">
+                                        <input checked id="consent" class="form-checkout__checkbox-input" type="checkbox" value="1" name="consent">
+                                        <label for="consent" class="form-checkout__label"><span class="form-checkout__text">Wyrażam zgodę na przetwarzanie moich danych osobowych.</span></label>
+                                    </div>
+                                    <div class="summary-checkout__error"><span>!</span>Wyraź zgodę!</div>
+                                </div>
+                                <button type="submit" class="summary-checkout__button button button-pink">Złożyć zamówienie i zapłaćić</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

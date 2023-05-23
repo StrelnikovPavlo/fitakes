@@ -1,0 +1,114 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+
+
+._icon-arrow:before {
+   content: "\e900";
+ }
+ ._icon-bread:before {
+   content: "\e901";
+ }
+ ._icon-cart:before {
+   content: "\e902";
+ }
+ ._icon-chek:before {
+   content: "\e903";
+ }
+ ._icon-close:before {
+   content: "\e904";
+ }
+ ._icon-egg:before {
+   content: "\e905";
+ }
+ ._icon-facebook:before {
+   content: "\e906";
+ }
+ ._icon-fire:before {
+   content: "\e907";
+ }
+ ._icon-gallery:before {
+   content: "\e908";
+ }
+ ._icon-icecream:before {
+   content: "\e909";
+ }
+ ._icon-instagram:before {
+   content: "\e90a";
+ }
+ ._icon-keto:before {
+   content: "\e90b";
+ }
+ ._icon-lang:before {
+   content: "\e90c";
+ }
+ ._icon-leg:before {
+   content: "\e90d";
+ }
+ ._icon-link:before {
+   content: "\e90e";
+ }
+ ._icon-location:before {
+   content: "\e90f";
+ }
+ ._icon-lupa:before {
+   content: "\e910";
+ }
+ ._icon-mail:before {
+   content: "\e911";
+ }
+ ._icon-more:before {
+   content: "\e912";
+ }
+ ._icon-next:before {
+   content: "\e913";
+ }
+ ._icon-non:before {
+   content: "\e914";
+ }
+ ._icon-none-drinks:before {
+   content: "\e915";
+ }
+ ._icon-non-egg:before {
+   content: "\e916";
+ }
+ ._icon-none-gras:before {
+   content: "\e917";
+ }
+ ._icon-nut:before {
+   content: "\e918";
+ }
+ ._icon-phone:before {
+   content: "\e919";
+ }
+ ._icon-search:before {
+   content: "\e91a";
+ }
+ ._icon-stomach:before {
+   content: "\e91b";
+ }
+ ._icon-vegan:before {
+   content: "\e91c";
+ }
+ ._icon-wielkanoc:before {
+   content: "\e91d";
+ }
+ ._icon-youtube:before {
+   content: "\e91e";
+ }
+
+ 

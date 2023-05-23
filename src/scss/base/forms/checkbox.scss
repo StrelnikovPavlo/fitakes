@@ -1,0 +1,201 @@
+.categories-filter {
+    // .categories-filter__checkbox
+    &__checkbox {
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: em(5);
+		}
+    }
+    // .categories-filter__input
+    &__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .categories-filter__label:before {
+			background: $redColor;
+		}
+		&:checked + .categories-filter__label {
+			font-weight: 600;
+		}
+		&:checked + .categories-filter__label:after {
+			opacity: 1;
+			visibility: visible;
+		}
+		&:checked + label .categories-filter__text:before {
+			color: $redColor;
+		}
+    }
+    // .categories-filter__label
+    &__label {
+		cursor: pointer;
+		display: inline-flex;
+		position: relative;
+		gap: 10px;
+		&:before {
+			content: "";
+			align-self: center;
+			flex: 0 0 16px;
+			width: 16px;
+			height: 16px;
+			border: 1px solid $redColor;
+			border-radius: 2px;
+			background-color: #fff;
+		}
+		&::after{
+			content:'';
+			position: absolute;
+			background: url('../img/font-icon/chek.svg') left no-repeat;
+			background-size: contain;
+			width: 10px;
+			height: 10px;
+			left: 3px;
+			top: 5px;
+			opacity: 0;
+			visibility: hidden;
+		}
+    }
+    // .categories-filter__text
+    &__text {
+		display: flex;
+		align-items: center;
+		align-self: center;
+		column-gap: 13px;
+		font-size: 14px;
+		line-height: math.div(21 , 14);
+		&::before{
+			color: #FF92A5;
+			font-size: 20px;
+		}
+    }
+	._hide{
+		.categories-filter__label{
+			&::before{
+				border: 1px solid #929292;
+			}
+		}
+		.categories-filter__text{
+			color: #929292;
+			&::before{
+				color: #929292;
+			}
+		}
+	}
+}
+.sort-filter {
+	&__item{
+		display: flex;
+		align-items: center;
+		min-height: 40px;
+		padding-left: 18px;
+		padding-right: 10px;
+		&:not(:last-child) {
+			border-bottom: 1px solid #ccc;
+		}
+	}
+    // .sort-filter__checkbox
+    &__checkbox {
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: em(5);
+		}
+    }
+    // .sort-filter__input
+    &__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .sort-filter__label:before {
+			opacity: 1;
+			visibility: visible;
+		}
+		&:checked + .sort-filter__label {
+			font-weight: 600;
+		}
+    }
+    // .sort-filter__label
+    &__label {
+		cursor: pointer;
+		display: inline-flex;
+		position: relative;
+		gap: 10px;
+		&:before {
+			content: "";
+			align-self: center;
+			background: url('../img/font-icon/chek-black.svg') center no-repeat;
+			flex: 0 0 11px;
+			width: 11px;
+			height: 10px;
+			background-size: contain;
+			opacity: 0;
+			visibility: hidden;
+		}
+    }
+    // .sort-filter__text
+    &__text {
+		font-size: 14px;
+		line-height: math.div(21 , 14);
+    }
+}
+.form-checkout {
+    // .form-checkout__checkbox
+    &__checkbox {
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: em(5);
+		}
+		&-input{
+			position: absolute;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			&:checked + .form-checkout__label:before {
+				opacity: 1;
+				visibility: visible;
+			}
+			&:checked + .form-checkout__label:before {
+				background: $redColor;
+			}
+			&:checked + .form-checkout__label:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+    }
+    // .form-checkout__label
+    &__label {
+		cursor: pointer;
+		display: inline-flex;
+		position: relative;
+		gap: 10px;
+		&:before {
+			content: "";
+			align-self: start;
+			flex: 0 0 16px;
+			width: 16px;
+			height: 16px;
+			border: 1px solid $redColor;
+			border-radius: 2px;
+			background-color: #fff;
+			margin-top: 2px;
+		}
+		&::after{
+			content:'';
+			position: absolute;
+			background: url('../img/font-icon/chek.svg') left no-repeat;
+			background-size: contain;
+			width: 10px;
+			height: 10px;
+			left: 3px;
+			top: 5px;
+			opacity: 0;
+			visibility: hidden;
+		}
+    }
+    // .form-checkout__text
+    &__text {
+		font-size: 14px;
+		line-height: math.div(21 , 14);
+    }
+}

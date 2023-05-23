@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+	@@include('html/_head.htm',{
+	"title":"Blog"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul>
+                            <li><a href="#">Glówna</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="blog">
+                    <div class="blog__container">
+                        <h1 class="blog__title section-title">Blog</h1>
+                        <div class="blog__items">
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/01.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Bezglutenowe ciastka z dyni</a></h3>
+                                    <p>Przygotuj te pyszne i zdrowe bezglutenowe ciastka z puree dyniowego, idealne na przekąskę lub do kawy!</p>
+                                    <div class="item-blog__data">16 sierpnia 2023</div>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/02.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Tarta z owocami sezonowymi</a></h3>
+                                    <p>Spróbuj tej pysznej i zdrowej tarty z dodatkiem sezonowych owoców - idealna na letnie przyjęcia</p>
+                                    <time class="item-blog__data">7 maja 2023</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/03.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Koktajl proteinowy z bananem i migdałami</a></h3>
+                                    <p>Oto pyszny i sycący koktajl proteinowy, który pomoże ci zregenerować mięśnie po treningu!</p>
+                                    <time class="item-blog__data">18 lutego 2023</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/04.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Jogurtowe muffiny z borówkami</a></h3>
+                                    <p>Przygotuj te pyszne i zdrowe muffiny z jogurtem i borówkami, idealne na lekką przekąskę lub śniadanie!</p>
+                                    <time class="item-blog__data">3 grudnia 2022</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/05.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Ciastka z masłem orzechowym</a></h3>
+                                    <p>Zrób te proste i pyszne ciasteczka z dodatkiem masła orzechowego - idealne na przekąskę przed treningiem!</p>
+                                    <time class="item-blog__data">22 września 2022</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/06.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Fit brownie z batatami</a></h3>
+                                    <p>Jeśli lubisz brownie, pokochasz to zdrowe i smaczne ciasto z batatami i kakao!</p>
+                                    <time class="item-blog__data">11 lipca 2022</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/08.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Chia pudding z jagodami</a></h3>
+                                    <p>Spróbuj tego zdrowego i smacznego pudding z dodatkiem jagód i chia - idealny na śniadanie lub lekki deser!</p>
+                                    <time class="item-blog__data">2 kwietnia 2022</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/07.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Proteinowe ciasteczka owsiane</a></h3>
+                                    <p>Przygotuj te pyszne, pełne białka ciasteczka owsiane, idealne na przekąskę lub na deser!</p>
+                                    <time class="item-blog__data">14 stycznia 2022</time>
+                                </div>
+                            </article>
+                            <article class="blog__item item-blog">
+                                <a href="#" class="item-blog__img">
+                                    <img src="../img/blog/09.jpg" alt="">
+                                </a>
+                                <div class="item-blog__content">
+                                    <h3 class="item-blog__title"><a href="#">Czekoladowe muffiny z awokado</a></h3>
+                                    <p>Oto zdrowa i pyszna alternatywa dla tradycyjnych muffinów z dodatkiem awokado!</p>
+                                    <time class="item-blog__data">25 października 2021</time>
+                                </div>
+                            </article>
+                        </div>
+                        @@include('html/_pagging.htm',{})
+                    </div>
+                </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,125 @@
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	width: 100%;
+	display: block;
+	outline: none;
+	&._form-focus {
+	}
+	&._form-error {
+	}
+}
+.input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+textarea[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}
+
+
+.form-input {
+	&._error{
+		.form-input__body{
+			border: 1px solid #C13515;
+			background: #FEF8F6;
+		}
+		.form-input__label{
+			color: #C13515;
+		}
+		.form-input__error{
+			display: flex;
+		}
+	}
+    // .form-input__body
+    &__body {
+		border: 1px solid rgba(176, 176, 176, 0.6);
+		border-radius: 8px;
+		min-height: 60px;
+		position: relative;
+		display: flex;
+		align-items: end;
+		background-color: #fff;
+		input{
+			border-radius: 8px;
+			color: #000;
+			min-height: 60px;
+			padding-left: 16px;
+			padding-right: 16px;
+			padding-top: 5px;
+			position: relative;
+			z-index: 2;
+			background-color: transparent;
+		}
+		&._focus{
+			input{
+				padding-top: 20px;
+			}
+			.form-input__label{
+				top: 11px;
+				font-size: 12px;
+				transform: translateY(0%);
+			}
+		}
+    }
+    // .form-input__label
+    &__label {
+		font-size: 16px;
+		color: #717171;
+		position: absolute;
+		top: 50%;
+		left: 16px;
+		transform: translateY(-50%);
+		transition: all 0.3s ease 0s;
+    }
+    // .form-input__error
+    &__error {
+		margin-top: 8px;
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+		color: #C13515;
+		font-size: 12px;
+		line-height: math.div(18 , 12);
+		display: none;
+		span{
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #C13515;
+			display: flex;
+			justify-content:center;
+			align-items: center;
+			color: #fff;
+		}
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

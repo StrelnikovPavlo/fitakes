@@ -1,0 +1,27 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+}
+.button-pink {
+	font-size: 16px;
+	line-height: math.div(24 , 16);
+	color: #fff;
+	background: #FF385C;
+	border-radius: 64px;
+	padding: 5px 10px;	
+	font-weight: 700;
+	@media (any-hover: hover){
+		&:hover{
+			background: #D12342;
+		}
+	}
+}

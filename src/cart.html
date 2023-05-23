@@ -1,0 +1,141 @@
+    <!DOCTYPE html>
+<html lang="pl">
+	@@include('html/_head.htm',{
+	"title":"Products"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul>
+                            <li><a href="#">Glówna</a></li>
+                            <li><a href="#">Produkty</a></li>
+                            <li><a href="#">Ciasta</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="cart">
+                    <div class="cart__container">
+                        <div class="cart__main">
+                            <div class="cart__slider slider-cart swiper">
+                                <div class="slider-cart__wrapper swiper-wrapper">
+                                    <a data-group="vacation" href="../img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
+                                        <img src="../img/product/01.png" alt="">
+                                    </a>
+                                    <a data-group="vacation" href="../img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
+                                        <img src="../img/product/01.png" alt="">
+                                    </a>
+                                    <a data-group="vacation" href="../img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
+                                        <img src="../img/product/01.png" alt="">
+                                    </a>
+                                    <a data-group="vacation" href="../img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
+                                        <img src="../img/product/01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="slider-cart__navigation">
+                                    <button type="button" class="slider-cart__arrow slider-cart__arrow-prev">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.682877 5.27296V6.72751H9.41015L5.41015 10.7275L6.44288 11.7602L12.2029 6.00023L6.44288 0.240234L5.41015 1.27296L9.41015 5.27296H0.682877Z" fill="#fff"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="slider-cart__arrow slider-cart__arrow-next">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.682877 5.27296V6.72751H9.41015L5.41015 10.7275L6.44288 11.7602L12.2029 6.00023L6.44288 0.240234L5.41015 1.27296L9.41015 5.27296H0.682877Z" fill="#fff"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart__desc desc-cart">
+                                <h2 class="desc-cart__title">Sernik Chałwowy</h2>
+                                <p class="desc-cart__status _icon-vegan">Keto</p>
+                                <p class="desc-cart__meta">bez dodatku cukru, bez glutenu</p>
+                                <div class="desc-cart__storage">
+                                    <div class="desc-cart__label">Sklad</div>
+                                    <p class="desc-cart__text">Jaja kurze, twaróg chudy, masło orzechowe, tahini, śmietanka 30%, mąka kokosowa, sól himalajska, erytrol.</p>
+                                </div>
+                                <div class="desc-cart__table table-desc">
+                                    <div class="table-desc__head">381 kcal/100g</div>
+                                    <div class="table-desc__grid">
+                                        <div class="table-desc__column">
+                                            <div class="table-desc__caption">Białko</div>
+                                            <div class="table-desc__caption">Węglowodany</div>
+                                            <div class="table-desc__caption">Tluscz</div>
+                                        </div>
+                                        <div class="table-desc__column">
+                                            <div class="table-desc__item">25g</div>
+                                            <div class="table-desc__item">9g</div>
+                                            <div class="table-desc__item">27g</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc-cart__portion portion-desc">
+                                    <p class="portion-desc__caption">Podana kaloryczność dotyczy jednej porcji (1 kawalek)</p>
+                                    <div class="portion-desc__label select-label">Porcja</div>
+                                    <select name="portion" class="portion-desc__select">
+                                        <option value="1" selected>Wybierz</option>
+                                        <option value="2">porcja 1</option>
+                                        <option value="3">porcja 1</option>
+                                        <option value="4">porcja 1</option>
+                                    </select>
+                                </div>
+                                <div class="desc-cart__price">210 zł</div>
+                                <a href="#" class="desc-cart__add button button-pink _icon-cart">Dodaj do koszyka</a>
+                                <p class="desc-cart__lead">*Minimalna ilość zamówienia - 4 szt.</p>
+                                <p class="desc-cart__lead">*Zamówienia przyjmujemy z 3-dniowym wyprzedzeniem.</p>
+                            </div>
+                        </div>
+                        <section class="also">
+                            <h4 class="also__title section-title">Polecamy również</h4>
+                            <div class="also__items">
+                                <article class="popular__item product">
+                                    <a href="#" class="product__img product__img-pr">
+                                        <img src="../img/product/06.png" alt="">
+                                    </a>
+                                    <h2 class="product__title"><a href="#">Tort Czekoladowy</a></h2>
+                                    <div class="product__status">Bez cukru <img src="../img/font-icon/non.svg" alt=""></div>
+                                    <div class="product__prices">
+                                        <div class="product__price-new">od 190,- zł</div>
+                                    </div>
+                                </article>
+                                <article class="popular__item product">
+                                    <a href="#" class="product__img product__img-pr">
+                                        <img src="../img/product/03.png" alt="">
+                                    </a>
+                                    <h2 class="product__title"><a href="#">Tort Czekoladowy</a></h2>
+                                    <div class="product__status">Bez cukru <img src="../img/font-icon/non.svg" alt=""></div>
+                                    <div class="product__prices">
+                                        <div class="product__price-new">od 190,- zł</div>
+                                    </div>
+                                </article>
+                                <article class="popular__item product">
+                                    <a href="#" class="product__img product__img-pr">
+                                        <img src="../img/product/02.png" alt="">
+                                    </a>
+                                    <h2 class="product__title"><a href="#">Tort Czekoladowy</a></h2>
+                                    <div class="product__status">Bez cukru <img src="../img/font-icon/non.svg" alt=""></div>
+                                    <div class="product__prices">
+                                        <div class="product__price-new">od 190,- zł</div>
+                                    </div>
+                                </article>
+                                <article class="popular__item product">
+                                    <a href="#" class="product__img product__img-pr">
+                                        <img src="../img/product/02.png" alt="">
+                                    </a>
+                                    <h2 class="product__title"><a href="#">Tort Czekoladowy</a></h2>
+                                    <div class="product__status">Bez cukru <img src="../img/font-icon/non.svg" alt=""></div>
+                                    <div class="product__prices">
+                                        <div class="product__price-new">od 190,- zł</div>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

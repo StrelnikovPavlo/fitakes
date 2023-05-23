@@ -1,0 +1,55 @@
+.privacy {
+    @include adaptiveValue("margin-bottom", 40, 20);
+    // .privacy__container
+    &__container {
+    }
+    // .privacy__title
+    &__title {
+        @media (max-width:$mobile){
+             margin-bottom: 5px; 
+        }
+    }
+    // .privacy__body
+    &__body {
+    }
+    // .privacy__block
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    // .privacy__head
+    &__head {
+        @include adaptiveValue("font-size", 24, 20);
+        font-weight: 700;
+        line-height: math.div(30 , 24);
+    }
+    &__caption{
+        font-size: 20px;
+        line-height: math.div(30 , 20);
+        font-weight: 700;
+    }
+    // .privacy__content
+    &__content {
+        padding-left: 18px;
+        li{
+            list-style:decimal;
+            font-size: 12px;
+            line-height: math.div(18 , 12);
+            p{
+                display: flex;
+                align-items: center;
+                position: relative;
+                &::before{
+                    content:'';
+                    position: absolute;
+                    width: 2px;
+                    height: 2px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}

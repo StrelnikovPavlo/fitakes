@@ -1,0 +1,113 @@
+.about {
+    @include adaptiveValue("margin-bottom", 40, 20);
+    // .about__container
+    &__container {
+        display: flex;
+        column-gap: 40px;
+        row-gap: 18px;
+        @media (max-width:$mobile){
+             flex-direction: column-reverse; 
+        }
+    }
+    // .about__body
+    &__body {
+        p{
+            font-size: 12px;
+            line-height: math.div(18 , 12);
+        }
+        @media (min-width:$mobile){
+            flex: 0 1 50%; 
+        }
+    }
+    &__text{
+        @include adaptiveValue("margin-bottom", 12, 8);
+    }
+    // .about__title
+    &__title {
+    }
+    // .about__block
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    // .about__head
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    // .about__caption
+    &__caption {
+        @include adaptiveValue("font-size", 24, 20);
+        line-height: math.div(36 , 24);
+        font-weight: 700;
+        margin-bottom: 0px;
+        @media (max-width:$mobile){
+             margin-bottom: 5px; 
+        }
+    }
+    // .about__icon
+    &__icon {
+    }
+    // .about__img
+    &__img {
+        @media (min-width:$mobile){
+            flex: 0 1 50%; 
+        }
+    }
+    &__bg{
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        @media (max-width:$mobile){ 
+            padding-bottom: 320px;
+            max-width: 300px;
+        }
+        @media (max-width:$mobileSmall){
+             max-width: none;
+             padding-bottom: 100%; 
+        }
+    }
+    &__list{
+        padding-left: 18px;
+        li{
+            list-style:decimal;
+            font-size: 12px;
+            line-height: math.div(18 , 12);
+            p{
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 20px;
+                max-width: 512px;
+                &::before{
+                    content:'';
+                    position: absolute;
+                    width: 2px;
+                    height: 2px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    margin-left: -10px;
+                }
+            }
+        }
+        &-none{
+            padding-left: 0;
+            li{
+                list-style: none;
+                p{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
